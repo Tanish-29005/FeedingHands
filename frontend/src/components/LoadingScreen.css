@@ -8,10 +8,12 @@
 }
 
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
-  background-color: #f8f9fa;
+  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
   min-height: 100vh;
   width: 100%;
+  overflow: hidden;
   color: #2d3436;
 }
 

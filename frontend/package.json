@@ -16,7 +16,7 @@
     "@supabase/supa-mdx-lint": "0.1.7-alpha",
     "@supabase/supabase-js": "2.49.1",
     "@teachablemachine/image": "^0.8.5",
-    "@tensorflow/tfjs": "1.3.1",
+    "@tensorflow/tfjs": "^3.21.0",
     "aws-s3-ses-kms": "1.0.0",
     "aws-sdk": "2.1692.0",
     "axios": "1.7.9",
