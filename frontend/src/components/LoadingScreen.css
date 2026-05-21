@@ -1,36 +1,48 @@
 /* Base styles and resets */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+
+
+html,
+body,
+#root {
   margin: 0;
   padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
 }
 
 body {
-  margin: 0;
   font-family: "Poppins", sans-serif;
-  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
-  min-height: 100vh;
-  width: 100%;
-  overflow: hidden;
   color: #2d3436;
 }
 
-/* Main container covers full viewport */
-.container {
+.loading-screen {
   position: fixed;
   inset: 0;
-  width: 100%;
-  min-height: 100vh;
+
+  width: 100vw;
+  height: 100vh;
+
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #a8e063 0%, #56ab2f 100%);
-  z-index: 9999;
+  background: linear-gradient(
+    135deg,
+    #a8e063 0%,
+    #56ab2f 100%
+  );
+
+  isolation: isolate;
 }
 
+.loading-screen::before {
+  content: "";
+  position: absolute;
+  inset: -200px;
+  background: inherit;
+  z-index: -1;
+}
 /* Donation effects */
 .donation-effect {
   position: absolute;

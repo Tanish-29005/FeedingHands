@@ -98,7 +98,7 @@ function LoadingScreen({ onLoaded }) {
   }, [onLoaded]);
 
   return (
-    <div className="container">
+    <div className="loading-screen">
       {/* Background Effects */}
       <div className="donation-effect"></div>
       <div className="donation-effect"></div>
